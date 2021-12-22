@@ -1,0 +1,13 @@
+<%- include('includes/head.ejs') %>
+</head>
+
+<body>
+    <%- include('includes/navigation.ejs') %>
+    <% if(msg) {%> 
+        <h1><%= msg  %></h1>
+    <% }else{ %>
+        <h1>Database Internal Error</h1>
+        <p>Something we are trying to fix</p>
+        <% } %> 
+
+<%- include('includes/end.ejs') %>
